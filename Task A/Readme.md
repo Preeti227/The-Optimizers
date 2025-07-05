@@ -5,19 +5,26 @@ This project builds a gender classification model using a pre-trained **MobileNe
 
 
 
-# Dataset Structure
-##  How to Run
+---
 
-### 1.  Install Required Packages
+## How to Run the Model
 
-bash
-pip install tensorflow opencv-python matplotlib scikit-learn
+To run the gender prediction system, follow these steps:
+### Step 1: Create and activate a virtual environment
+```bash
+python -m venv venv
+venv\Scripts\activate        # On Windows
+# source venv/bin/activate   # On Mac/Linux
+```
 
-
-If you're using Google Colab:
-
-python
-!pip install opencv-python -q
+### Step 2: Install required dependencies
+```bash
+pip install -r requirements.txt
+```
+### Step 3: Run the main interface
+```bash
+python main.py
+```
 
 
 ### 2.  Load & Preprocess Dataset
