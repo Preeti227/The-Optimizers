@@ -36,25 +36,32 @@ X_train, y_train = load_images_for_imagenet_model(train_path)
 X_val, y_val = load_images_for_imagenet_model(val_path)
 
 
-### 3.  Model Architecture
+## 🧱 Model Architecture
 
- **Base**: MobileNetV2 (pre-trained on ImageNet, frozen during training)
- **Head**: GlobalAveragePooling → Dropout → Dense (Softmax for 2 classes)
+The gender prediction model is built using a transfer learning approach with **MobileNetV2** as the feature extractor. MobileNetV2 is a lightweight convolutional neural network optimized for speed and efficiency, making it ideal for real-time and embedded applications.
 
-python
-base_model = MobileNetV2(weights='imagenet', include_top=False)
+The architecture is composed of the following layers:
 
-### 4. Train the Model
-python
-model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=10, batch_size=32)
+1. **Input Layer**: Accepts RGB images of shape `(224, 224, 3)`, which are preprocessed using MobileNetV2's `preprocess_input()` function.
+
+2. **MobileNetV2 Base**: A pretrained MobileNetV2 model is used with `include_top=False` to remove the original classification head. This base model outputs deep spatial features from the input images while keeping the number of parameters low.
+
+3. **Global Average Pooling (GAP)**: This layer reduces the spatial dimensions of the feature map from the MobileNetV2 output by computing the average value for each feature map. It replaces dense layers to reduce overfitting and model size.
+
+4. **Dropout Layer**: A `Dropout(rate=0.3)` is added to prevent overfitting by randomly turning off 30% of the neurons during each training step.
+
+5. **Dense Output Layer**: A fully connected `Dense(2)` layer with `softmax` activation is used to output class probabilities for the two categories: `Male` and `Female`.
+
+### 🔧 Summary
+
+- **Backbone**: MobileNetV2 (pretrained on ImageNet)
+- **Head Layers**: GAP → Dropout(0.3) → Dense(2, softmax)
+- **Loss Function**: Categorical Crossentropy
+- **Optimizer**: Adam
+- **Input Size**: 224x224x3
 
 
-### 5.  Save the Trained Model
-
-python
-model.save("gender_classifier_mobilenetv2.h5")
-
-### 6.  Evaluation Metrics
+###  Evaluation Metrics
 
 Use:
 
@@ -64,10 +71,6 @@ Use:
 * F1 Score
 * AUC-ROC
 * ROC Curve
-
-python
-evaluate_model(model, X_val, y_val, "Validation")
-
 
 ### 7.  Predict Gender for a Single Image
 
