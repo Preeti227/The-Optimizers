@@ -1,26 +1,11 @@
 
-#  Gender Classification Using MobileNetV2
+# Gender Classification
 
 This project builds a gender classification model using a pre-trained **MobileNetV2** architecture, leveraging **TensorFlow/Keras**. The model is trained on RGB face images labeled as either **male** or **female** and evaluates performance using metrics like **accuracy**, **F1 score**, **ROC AUC**, and more. The final model can also predict gender from a new input image.
 
 
 
 # Dataset Structure
-
-Ensure your dataset is organized as follows:
-
-data/
-├── train/
-│   ├── female/
-│   │   ├── img1.jpg
-│   │   └── ...
-│   └── male/
-│       ├── img2.jpg
-│       └── ...
-└── val/
-    ├── female/
-    └── male/
-
 ##  How to Run
 
 ### 1.  Install Required Packages
