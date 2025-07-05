@@ -56,7 +56,7 @@ The architecture is composed of the following layers:
 - **Optimizer**: Adam
 - **Input Size**: 224x224x3
 
-
+---
 ###  Evaluation Metrics
 * Accuracy
 * Precision
