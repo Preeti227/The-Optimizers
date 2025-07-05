@@ -24,7 +24,14 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+Once main.py starts, you'll see a menu in the terminal:
+Gender Prediction Project
+1. Train model
+2. Predict single image
+3. Predict batch folder
+4. Exit
 
+---
 ## Model Architecture
 
 The gender prediction model is built using a transfer learning approach with **MobileNetV2** as the feature extractor. MobileNetV2 is a lightweight convolutional neural network optimized for speed and efficiency, making it ideal for real-time and embedded applications.
