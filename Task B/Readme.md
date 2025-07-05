@@ -2,6 +2,7 @@
 
 ----
 For DEFAULT_REF_DIR (in `interactive.py`) use a combination of Train+Val for matching against known identities.
+https://drive.google.com/drive/folders/13HhiTA6LHNYcZ8PaC4Y4iLgeXP9Vl8Pr?usp=drive_link
 
 ## Scripts
 
