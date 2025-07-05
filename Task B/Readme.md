@@ -1,7 +1,7 @@
 # Task B: Face Matching (Multi-Class Recognition with Distorted Inputs)
 
 ----
-For reference gallery, use a combination of Train+Val for matching against known identities
+For DEFAULT_REF_DIR (in `interactive.py`) use a combination of Train+Val for matching against known identities.
 
 ## Scripts
 
