@@ -1,0 +1,1 @@
+   app = FaceAnalysis(name='buffalo_l')
