@@ -9,6 +9,9 @@ https://drive.google.com/drive/folders/1ypvrfkmXRGXDKSKXbk-qkgnMGm3xOPVC?usp=sha
 
 Since the provided dataset had huge number of files, we modified it according to our GPU limits.
 --
+## IMPORTANT NOTE
+Our pretrained model weight (`siamese.keras`) exceeded the Github upload limit so here is the model `https://drive.google.com/file/d/1C40DZVWaW-rcIxSQlGd6KeTIFg2G8XR7/view?usp=sharing` download it and use under `face_identity/model`
+
 # Steps to Run
 
 ### Clone the Repository
