@@ -4,6 +4,7 @@
 This project implements a Multiclass Face Identification in Adverse Climatic Conditions using a Siamese Embedding Network and an ensemble of models based on Siamese outputs. The goal is to determine whether two face images belong to the same person, even under distortions or image quality changes.
 
 ### Dataset
+-
 https://drive.google.com/drive/folders/1ypvrfkmXRGXDKSKXbk-qkgnMGm3xOPVC?usp=sharing
 Since the provided dataset had huge number of files, we modified it according to our GPU limits.
 --
@@ -22,7 +23,6 @@ python run.py
 * Prompts for 2 image paths
 * Displays prediction and visual result
 
-* 
 ### Evaluate on Full Dataset
 ```bash
 python evaluate_dataset.py
