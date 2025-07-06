@@ -1,7 +1,9 @@
+**TEAM NAME: THE OPTIMIZERS**
+
 Here’s a **combined `README.md`** that documents **two different approaches** for **Task B: Face Matching**:
 
-1. ✅ **Approach 1**: Siamese Neural Network with Ensemble
-2. ✅ **Approach 2**: ArcFace (InsightFace) Embedding-based Matching
+1. **Approach 1**: Siamese Neural Network with Ensemble
+2. **Approach 2**: ArcFace (InsightFace) Embedding-based Matching
 
 This README clearly separates both pipelines and describes their usage, scripts, and architecture under a single project.
 
@@ -9,7 +11,6 @@ This README clearly separates both pipelines and describes their usage, scripts,
 # Task B: Robust Face Matching Under Distortions
 
 This repository presents **two different approaches** for **face verification under adverse visual conditions**, as part of **Task B**. Each approach uses a different strategy for comparing distorted facial images with their clean counterparts.
-
 
 
 ##  Approach 1: Siamese Neural Network with Ensemble
@@ -74,19 +75,11 @@ This approach uses **pretrained ArcFace models** from InsightFace to extract emb
 * **Top-1 Accuracy**
 * **Macro F1 Score**
 
-###  Installation
-
-bash
-pip install -r requirements.txt
-
-
-###  Example Run
+###  Requirements
 
 ```bash
-python app/batch_eval.py
+pip install -r requirements.txt
 ```
-
-
 
 ## Summary
 
@@ -95,10 +88,10 @@ python app/batch_eval.py
 | Model Type          | Siamese Neural Network + Ensemble     | Pretrained ArcFace (ResNet50) |
 | Input Preprocessing | Resize, grayscale, filters, normalize | Resize, filters, normalize    |
 | Similarity Measure  | Absolute diff + sigmoid classifier    | Cosine similarity             |
-| Training Required   | ✅ Yes                                 | ❌ No (pretrained)             |
-| Evaluation Support  | ✅ Yes                                 | ✅ Yes                         |
+| Training Required   | Yes                                 | No (pretrained)             |
+| Evaluation Support  | Yes                                 | Yes                         |
 | Visual Output       | Matplotlib (image pair display)       | Matplotlib (pair viewer)      |
 
 
-
+## A seperate `Readme.md` is provided for both the aproaches
 
