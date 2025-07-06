@@ -3,8 +3,9 @@
 
 This project builds a gender classification model using a pre-trained **MobileNetV2** architecture, leveraging **TensorFlow/Keras**. The model is trained on RGB face images labeled as either **male** or **female** and evaluates performance using metrics like **accuracy**, **F1 score**, **ROC AUC**, and more. The final model can also predict gender from a new input image.
 
-
 ---
+## Dataset
+https://drive.google.com/drive/folders/1rIvlVVBYwKKYhm-xluAT3DTwlpKmRAFU?usp=sharing
 
 ## How to Run the Model
 
