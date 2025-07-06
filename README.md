@@ -13,7 +13,7 @@ This README clearly separates both pipelines and describes their usage, scripts,
 This repository presents **two different approaches** for **face verification under adverse visual conditions**, as part of **Task B**. Each approach uses a different strategy for comparing distorted facial images with their clean counterparts.
 
 
-##  Approach 1: Siamese Neural Network with Ensemble
+##  Approach 1: Siamese Neural Network with Ensemble (MODEL 2)
 
 This method uses a deep Siamese architecture with parallel embedding streams and a final classifier.
 
